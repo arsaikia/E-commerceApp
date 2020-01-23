@@ -1,0 +1,31 @@
+Setting up a Apache server in ubuntu with php and oracle client
+
+1) Run --> sudo apt-get install apache2
+
+2) Run --> sudo service apache2 start
+
+3) Run --> sudo apt-get install php-dev libapache2-mod-php php-pear
+
+4) Run --> curl -O https://download.oracle.com/otn_software/linux/instantclient/193000/instantclient-basic-linux.x64-19.3.0.0.0dbru.zip
+
+5) Run --> curl -O https://download.oracle.com/otn_software/linux/instantclient/193000/instantclient-sdk-linux.x64-19.3.0.0.0dbru.zip
+
+6) Unzip files downloaded in steps (4) and (5) and save in a single folder	//Remember saving both in same directory is mandatory
+
+7) Run --> sudo vim /etc/ld.so.conf.d/instantclient.conf	//This opens up the instantclient.conf file
+
+8) Now add the complete path of the newly unzipped instant client folder and then close the text file opened in step (7)
+
+9) Run --> sudo ldconfig
+
+10) Run --> sudo pecl install oci8
+
+11) Run --> sudo vim /etc/php/7.2/apache2/php.ini	//This opens up the php config file
+
+12) Enable "extension=oci8.so" in the opened file and close it
+
+13) Run --> sudo apt-get install libaio1
+
+14) create symlink to the cloned folder by running --> sudo ln -s <cloned folder> /var/www/html/bbuy	//You can use your own url if you want
+
+15) Run --> sudo service apache2 restart
