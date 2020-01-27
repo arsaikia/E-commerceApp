@@ -32,4 +32,4 @@
 * **ER_Diagram.jpg** is the Entity Relationship diagram for project
 ![](https://github.com/arsaikia/E-commerceApp/blob/master/ER_Diagram.jpg)
 
-* Screenshots and flow is available in the ![ __Report.pdf__ ](https://github.com/arsaikia/E-commerceApp/blob/master/Report.pdf) file
+* Screenshots and flow is available in the __![Report.pdf](https://github.com/arsaikia/E-commerceApp/blob/master/Report.pdf)__ file
