@@ -13,10 +13,6 @@
 * oci8 php add-on
 
 ##### Please find the resources in order
-
-* Here is a demo video:
-
-    * [![Watch the video](./MAIN/pictures/youtube_empty.png)](https://youtu.be/yOCQggHC8T8)
     
 * Below are the steps to set up the server and run the website
 
